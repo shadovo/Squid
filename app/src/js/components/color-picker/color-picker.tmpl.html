@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="color-picker.css">
+<template id="color-picker-tmpl">
+    <div class="color-picker">
+        <!-- ko foreach: predefinedColors -->
+        <span class="color-picker__predefined" 
+            data-bind=" click: $parent.selectPredefined.bind($data, $data),
+                        style: {'backgroundColor': $data},
+                        css: {'color-picker__predefined--selected' : ($data === $parent.selectedColor())}"></span>
+        <!-- /ko -->
+        <input class="color-picker__input" placeholder="#ffffff" data-bind="value: selectedColor" type="text">
+    </div>
+</template>

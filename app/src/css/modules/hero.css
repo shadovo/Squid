@@ -1,0 +1,16 @@
+.hero {
+    position: relative;
+    color: white;
+    padding: 15px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+    background: linear-gradient(to bottom, #2edb1b 0%,#e0d986 100%);
+}
+.hero__title {
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-top: 40px;
+}
+.hero__subtitle {
+    font-size: 15px;
+    font-weight: 300;
+}

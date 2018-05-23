@@ -1,0 +1,107 @@
+.form__input-group {
+    padding: 0 15px;
+    margin: 30px 0;
+    color: #dedede;
+}
+.form__split-group {
+   display: flex; 
+   align-items: center;
+}
+.form__split-group span {
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+.form__inline-label {
+    background-color: #5E5E5E;
+    border-radius: 3px 3px 0 0;
+    border: 1px solid #666;
+    color: #dedede;
+    padding: 5px 10px;
+}
+label.form__connected-label--left,
+label.form__connected-label--right {
+    background-color: #5E5E5E;
+    border: 1px solid #666;
+    color: #dedede;
+    padding: 3px 5px;
+    height: 27px;
+    font-size: 16px;
+}
+input[type=text].form__connected-label--left,
+input[type=number].form__connected-label--left,
+select.form__connected-label--left {
+    border-radius: 0 3px 3px 0;
+}
+label.form__connected-label--left {
+    border-radius: 3px 0 0 3px;
+}
+input[type=text].form__connected-label--right,
+input[type=number].form__connected-label--right,
+select.form__connected-label--right {
+    border-radius: 3px 0 0 3px;
+}
+label.form__connected-label--right {
+    border-radius: 0 3px 3px 0;
+}
+label {
+    display: block;
+    color: #dedede;
+    border-bottom: 1px solid #757575;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.form__sublabel {
+    color: #dedede;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form__button, input[type=text], input[type=number], textarea, select {
+    border: 1px solid #666;
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    background-color: #404040;
+    color: white;
+    resize: vertical;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.form__button, select {
+    cursor: pointer;
+    height: 27px;
+}
+.form__button:hover, select:hover {
+    background-color: #5a5a5a;
+}
+.form__button {
+    width: auto;
+    display: inline-block;
+    min-width: 130px;
+    cursor: pointer;
+}
+.form__image-preview {
+    float: right;
+    max-height: 40px;
+    max-width: 80px;
+}
+.form__image-preview-src {
+    font-size: 12px;
+    color: #949494;
+    display: block;
+    margin-bottom: 10px;
+}
+.form__button--clear {
+    cursor: pointer;
+    color: white;
+    font-size: 13px;
+    margin-left: 10px;
+}
+.form__button--clear:hover {
+    color: #ff3434;
+}
+.form__select {
+    max-width: 100%;
+    width: auto;
+}

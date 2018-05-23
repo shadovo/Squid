@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <style>
+        html, body, #background {
+            margin: 0;
+            padding: 0;
+            height: 150px;
+            width: 100%;
+            min-width: 320px;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+            font-family: Lato, Arial;
+            overflow: hidden;
+            position: relative;
+            line-height: 1;
+        }
+        #background {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            font-size: 19px;
+        }
+        #image {
+            max-width: 100%;
+            -webkit-box-flex: 0;
+                -ms-flex-positive: 0;
+                    flex-grow: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            z-index: 1;
+        }
+        #logo-container {
+            max-width: 100%;
+            margin-right: 15px;
+            -webkit-box-flex: 0;
+                -ms-flex-positive: 0;
+                    flex-grow: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            z-index: 2;
+            width: 216px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -ms-flex-negative: 0;
+                flex-shrink: 0;
+        }
+        #logo-wrapper {
+            max-width: 100%;
+            max-height: 100%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        #logo {
+            opacity: 0;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        #heading,
+        #text,
+        #link {
+            margin: 0;
+            margin-bottom: 0.2rem;
+        }
+        #heading {
+            font-weight: bold;
+        }
+        #text {
+            font-weight: normal;
+            color: #666;
+        }
+        #link {
+            font-weight: bold;
+            color: #1998e6;
+        }
+        #background:hover #link {
+            text-decoration: underline;
+        }
+        #text-container {
+            -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                    flex-grow: 1;
+            margin-right: 15px;
+        }
+        @media screen and (max-width: 550px) and (min-width: 401px) {
+            #logo-container{
+                max-width: 166px;
+            }
+            #logo-container {
+                margin-right: 0.5rem;
+            }
+        }
+        @media screen and (max-width: 400px) {
+            #background {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                -webkit-box-align: flex-start;
+                -ms-flex-align: flex-start;
+                    align-items: flex-start;
+                padding: 10px;
+            }
+            #logo-container {
+                max-width: 100%;
+                height: 40px;
+                text-align: left;
+                margin-bottom: 0.2rem;
+                display: block;
+            }
+            #logo-wrapper {
+                background-position: center left;
+                width: 100%;
+                height: 100%;
+                max-width: 100%;
+                max-height: 100%;
+                display: block;
+            }
+            #logo {
+                max-width: 100%;
+                max-height: 100%;
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="background">
+        <div id="logo-container">
+            <span id="logo-wrapper">
+                <img id="logo" src="">
+            </span>
+        </div>
+        <div id="text-container">
+            <p id="heading"></p>
+            <p id="text"></p>
+            <p id="link"></p>
+        </div>
+        <img id="image" src="">
+    </div>
+</body>
+</html>

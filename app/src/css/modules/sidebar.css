@@ -1,0 +1,23 @@
+.sidebar {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 313px;
+    display: inline-block;
+    background-color: #2f2f2f;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.sidebar__logo-container {
+    width: calc(100% - 10px);
+    left: 5px;
+    top: 0px;
+    position: relative;
+    border-bottom: 2px solid #b3b3b3;
+    box-sizing: content-box;
+    text-align: center;
+}
+.sidebar__logo {
+    height: 60px;
+}

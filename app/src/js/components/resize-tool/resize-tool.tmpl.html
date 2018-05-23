@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="resize-tool.css">
+<template id="resize-tool-tmpl">
+    <div class="resize-tool">
+        <div class="resize-tool__wrapper">
+            <div class="resize-tool__indicator resize-tool__indicator--desktop" data-bind="click: setSize.bind({}, DESKTOP_WIDTH)">Desktop - 770px</div>
+            <div class="resize-tool__indicator resize-tool__indicator--ipad" data-bind="click: setSize.bind({}, IPAD_WIDTH)">iPad - 470px</div>
+            <div class="resize-tool__indicator resize-tool__indicator--iphone" data-bind="click: setSize.bind({}, IPHONE_WIDTH)">iPhone - 375px</div>
+            <div class="resize-tool__ruler">
+                <span class="resize-tool__ruler-notch">100</span>
+                <span class="resize-tool__ruler-notch">200</span>
+                <span class="resize-tool__ruler-notch">300</span>
+                <span class="resize-tool__ruler-notch">400</span>
+                <span class="resize-tool__ruler-notch">500</span>
+                <span class="resize-tool__ruler-notch">600</span>
+                <span class="resize-tool__ruler-notch">700</span>
+                <span class="resize-tool__ruler-notch">800</span>
+                <span class="resize-tool__ruler-notch">900</span>
+                <span class="resize-tool__ruler-notch">1000</span>
+            </div>
+        </div>
+    </div>
+</template>

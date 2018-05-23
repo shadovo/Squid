@@ -1,0 +1,14 @@
+{
+    "appId": "com.shadovo.project-squid",
+    "mac": {
+        "category": "public.app-category.developer-tools",
+        "target": []
+    },
+    "linux": {
+        "target": [
+            "AppImage",
+            "deb"
+        ],
+        "icon": "build"
+    }
+}

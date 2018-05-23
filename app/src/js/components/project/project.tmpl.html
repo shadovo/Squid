@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="project.css">
+<template id="project-tmpl">
+    <div class="project__task-container">
+        <div class="project__settings">
+            <div class="project__settings">
+                <div class="form__input-group">
+                    <label for="heading">Rubrik</label>
+                    <input data-bind="value: heading.text, valueUpdate: 'input'" placeholder="Vi känner Sverige!" name="heading" type="text">
+                </div>
+                
+                <div class="form__input-group">
+                    <label for="text">Text</label>
+                    <textarea data-bind="value: text.text, valueUpdate: 'input'" 
+                              rows="3"
+                              placeholder="Adresser, telefonnummer och kartor till alla företag och personer." 
+                              name="text" type="text"></textarea>
+                </div>
+                <div class="form__input-group">
+                        <label for="heading">Länk</label>
+                        <input data-bind="value: link.text, valueUpdate: 'input'" placeholder="Hitta rätt här!" name="link" type="text">
+                </div>
+                <div class="form__input-group">
+                    <label for="logo">Logotyp</label>
+                    <button data-bind="click: selectLogo" name="logo" class="form__button">Välj logotyp</button>
+                    <span class="form__button--clear" data-bind="visible: logo.src(), click: removeLogo">Ta bort</span>
+                    <!-- ko if: logo.src() -->
+                        <img class="form__image-preview" data-bind="attr: {
+                            src: logo.src
+                        }">
+                        <code class="form__image-preview-src" data-bind="text: logo.name"></code>
+                    <!-- /ko -->
+                </div>
+
+                <div class="form__input-group">
+                    <label for="image">Bild</label>
+                    <button data-bind="click: selectImage" name="image" class="form__button">Välj bild</button>
+                    <span class="form__button--clear" data-bind="visible: image.src(), click: removeImage">Ta bort</span>
+                    <!-- ko if: image.src() -->
+                        <img class="form__image-preview" data-bind="attr: {
+                            src: image.src
+                        }">
+                        <code class="form__image-preview-src" data-bind="text: image.name"></code>
+                        <br>
+                        <span class="form__sublabel">Dölj bilden om bannern är smalare än</span>
+                        <div data-bind="component: {
+                                            name: 'multiRangeInput',
+                                            params: {
+                                                callback: setImageMediaQuery,
+                                                min: image.mediaQueries().min,
+                                                max: image.mediaQueries().max
+                                            }
+                                        }"></div>
+                    <!-- /ko -->
+                </div>
+
+                <div class="form__input-group">
+                    <label for="backgroundImage">Bakgrund</label>
+                    <div data-bind="component: {
+                                name: 'colorPicker',
+                                params: {
+                                    selectedColor: background.color(),
+                                    colors: backgroundColors,
+                                    callback: setBackgroundColor
+                                }
+                            }"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

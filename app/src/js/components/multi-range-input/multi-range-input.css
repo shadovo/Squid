@@ -1,0 +1,15 @@
+.multi-range-input {
+    display: flex;
+}
+.multi-range-input__separator {
+    margin: 0 7px;
+    height: 13px;
+    width: 2rem;
+    border-bottom: 2px solid #666;
+    vertical-align: top;
+}
+.multi-range-input__input {
+    vertical-align: top;
+    display: flex;
+    max-width: 100px;
+}

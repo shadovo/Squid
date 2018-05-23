@@ -1,0 +1,23 @@
+.projects-menu {
+    display: flex;
+    width: calc(100% - 10px);
+    margin: 0 auto;
+    border-bottom: 1px solid #666;
+}
+ .projects-menu__button {
+    outline: none;
+    flex-grow: 1;
+    border-radius: 0;
+    background-color: transparent;
+    border: none;
+    color: white;
+    height: 30px;
+    cursor: pointer;
+    font-size: 13px;
+ }
+.projects-menu__button:hover {
+     background-color: #5a5a5a;
+ }
+.projects-menu__button:not(:last-child) {
+    border-right: 1px solid #666;
+}

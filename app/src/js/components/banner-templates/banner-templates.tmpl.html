@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="banner-templates.css">
+<template id="banner-templates-tmpl">
+    <div data-bind="foreach: tmplNames">
+        <div class="card banner-templates__card" data-bind="css: {'banner-templates__card--selected': $data === $component.previouslySelectedTemplate() }">
+            <iframe class="banner-templates__iframe" data-bind="renderTemplate: $data" frameborder="0"></iframe>
+            <div data-bind="click: $parent.downloadBanner.bind({}, $data)" class="banner-templates__overlay">
+                <span class="banner-templates__overlay-icon">Spara</span>
+            </div>
+        </div>
+    </div>
+</template>
